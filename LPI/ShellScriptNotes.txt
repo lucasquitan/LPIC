@@ -1,0 +1,48 @@
+==================== SHELL ====================
+
+Cabeçalho do Script
+
+#!/bin/bash
+
+==================== PARAMETROS ====================
+
+Os parâmetros são referenciados como $NUM
+
+$0 = Nome do arquivo/Script.
+$1 = Primeiro arguimento.
+$N = N-esimo argumento.
+
+$# = Quantidade de parametros recebidos no documento.
+
+==================== COMANDOS ====================
+
+read VAR = Armazena em VAR a entrada do usuário.
+VAR=`comando` OU VAR=$(comando) = Armazena na variavel o resuldado do comando.
+
+expr: realiza expressões matematicas
+seq X: cria sequencias de 1 a X
+
+==================== BLOCOS ====================
+
+IF
+
+if [ condição ]; then
+	comando
+fi
+
+
+-f = verifica se o arquivo existe
+-d = verifica se o caminho existe
+-r|w|x = verifica condição de leitura, escrita, execução
+
+-gt: >
+-ge: >=
+-lt: <=
+-le: <=
+
+-n $VAR = verifica se o conteudo de VAR é diferente de zero
+-z $VAR = verifica se o o tamanho de VAR é 0
+
+stg = stg2: compara se duas strings são iguais
+stg != stg2: compara se duas strings são diferentes
+

@@ -1,0 +1,56 @@
+Dicas para o VI
+
+/<palavra> = Procura pela palavra no arquivo. (Similar ao comando less)
+
+===========================================================
+
+COPIAR E COLAR
+
+v = Entra em modo VISUAL, seleciona o texto.
+
+cc = Recortar, entrando em seguida em modo de edição.
+dd = Recortar, porem nao entra em modo de edição.
+y = Copiar
+p = Colar
+
+===========================================================
+
+DESFAZER E REPAZER
+
+Desfaz	= u
+Refaz	= Ctrl+R
+
+===========================================================
+
+MODO DE INSERÇÃO
+
+i = Insere antes da seleção do cursor.
+a = Insere após a seleção do cursor.
+I = Insere no início da linha
+A = Insere no final da linha.
+o = Insere na próxima linha.
+
+===========================================================
+
+MODO DE NAVEGAÇÃO
+
+0 = Move o cursor para o final da linha.
+$ = Move o cursor para o início da linha.
+
+1G = Move o cursor para o início do arquivo.
+G = Move o cursor para o fim do arquivo.
+
+===========================================================
+
+COMANDOS
+
+Para entrar no modo de Comandos, é necessário apertar Esc.
+
+:q = Sair do arquivo.
+:q! = Sair sem salvar.
+:w = Salvar.
+:wq ou x = Salvar e sair.
+
+:! = Caractere para forçar sem avisar.
+
+ZZ Salva e sai.
