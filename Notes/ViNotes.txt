@@ -1,46 +1,77 @@
-Dicas para o VI
+BUSCAS
 
 /<palavra> = Procura pela palavra no arquivo. (Similar ao comando less)
 
-===========================================================
+===============================================================================================================
 
 COPIAR E COLAR
 
 v = Entra em modo VISUAL, seleciona o texto.
 
-cc = Recortar, entrando em seguida em modo de edição.
-dd = Recortar, porem nao entra em modo de edição.
+p = Colar.
 y = Copiar
-p = Colar
 
-===========================================================
+c = Altera a linha, copiando o seu conteúdo, entrando em seguida no INSERTION MODE. [change]
+d = Deleta a linha. [delte]
 
-DESFAZER E REPAZER
+É possível deletar todo o conteúdo dentro de tags, parenteses e chaves.
+Base usar a sequencia di* [delete, insite, *a tag a ser escolhida.]
+
+Essas opções podem ser multiplicadas (Ex.: 3d = Deleta 3 linhas).
+Ao realizar as opções com d, c, y dentre outras, todo o conteúdo fica armazenado no buffer para colar com o p.
+
+===============================================================================================================
+
+DESFAZER E REFAZER
 
 Desfaz	= u
 Refaz	= Ctrl+R
 
-===========================================================
+===============================================================================================================
 
 MODO DE INSERÇÃO
 
 i = Insere antes da seleção do cursor.
 a = Insere após a seleção do cursor.
-I = Insere no início da linha
-A = Insere no final da linha.
-o = Insere na próxima linha.
+I = Insere no início da linha. (Shift+i)
+A = Insere no final da linha. (Shift+a)
+o = Insere na linha abaixo.
+O = Insere na linha acima. (Shift+o)
 
-===========================================================
+===============================================================================================================
 
+MOVIMENTAÇÃO PELO ARQUIVO
+
+Estas dicas funcionam apenas no NORMAL MODE.
+
+HJKL
+
+HL = Esquerda e direita.
+JK = Para baixo e para cima. 
+
+Navegação por palavras
+
+b = vai para o início da palavra, considerando caracteres especiais, indo para tras. (begin)
+w = Da mesma forma que o b, porém para frente. (word)
+
+Utilizando o Shift, serão apenas considerados os caracteres alfanuméricos.
+
+e = Final da panavra. (end)
+
+{} = Movimenta pelo arquivo buscando espaços em branco, indo a frente e voltando pelo documento.
+() = Ele entra pela identação
+
+===============================================================================================================
+	
 MODO DE NAVEGAÇÃO
 
 0 = Move o cursor para o final da linha.
 $ = Move o cursor para o início da linha.
 
-1G = Move o cursor para o início do arquivo.
+gg = Move o cursor para o início do arquivo.
 G = Move o cursor para o fim do arquivo.
 
-===========================================================
+===============================================================================================================
 
 COMANDOS
 
@@ -54,3 +85,4 @@ Para entrar no modo de Comandos, é necessário apertar Esc.
 :! = Caractere para forçar sem avisar.
 
 ZZ Salva e sai.
+
