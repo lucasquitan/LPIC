@@ -1,0 +1,12 @@
+#!/bin/bash
+echo -e "Name of script: \c"
+read -r file
+touch ../scripts/$file.sh
+echo '#!/bin/bash' > ../scripts/$file.sh
+echo '# Purpose:' >> ../scripts/$file.sh
+echo '# Version: 1.0' >> ../scripts/$file.sh
+echo '# Date: '`date` >> ../scripts/$file.sh
+echo ' ' >> ../scripts/$file.sh
+echo ' ' >> ../scripts/$file.sh
+echo '# ==== BEGIN ====' >> ../scripts/$file.sh
+echo '# ==== END ====' >> ../scripts/$file.sh
