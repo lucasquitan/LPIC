@@ -4,6 +4,27 @@ Cabeçalho do Script
 
 #!/bin/bash
 
+==================== CRON ====================
+
+Verificar o status do CRON
+sudo /etc/inid.d/cron status
+
+Para iniciar ou finalizar, basta alterar o parametro status para start ou stop.
+
+A estrutura do cron é simples:
+
+* * * * * comando
+1 - minuto (0-59)
+2 - hora (0-23)
+3 - dia do mês (1-31)
+4 - mês (1-12) ou jan,feb,...
+5 - dia da semana (0-6) domingo,segunda (sun,mon,tue, wed,thu,fri,sat)
+
+Para alterar a configuração do cron, existem duas formas:
+
+crontab -e
+vi /etc/crontab
+
 ==================== PARAMETROS ====================
 
 Os parâmetros são referenciados como $NUM
