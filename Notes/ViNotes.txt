@@ -1,8 +1,20 @@
+MODOS DE OPERAÇÃO
+
+Insert = Modo de digitação. Para sair, apertar "Esc"
+Ex = Toda vez que é feito ":"
+Normal = Modo onde as teclas são comandos
+Visual = Navegação pelo documento
+Block Mode = Edição de sintaxe distinta em forma de blocos.
+
+
+=====================================================================================================
+
 BUSCAS
 
 /<palavra> = Procura pela palavra no arquivo. (Similar ao comando less)
 
-===============================================================================================================
+
+=====================================================================================================
 
 COPIAR E COLAR
 
@@ -11,34 +23,51 @@ v = Entra em modo VISUAL, seleciona o texto.
 p = Colar.
 y = Copiar
 
-c = Altera a linha, copiando o seu conteúdo, entrando em seguida no INSERTION MODE. [change]
+c = Altera a linha, "cortando" o seu conteúdo, entrando em seguida no INSERTION MODE. [change]
 d = Deleta a linha. [delte]
 
-É possível deletar todo o conteúdo dentro de tags, parenteses e chaves.
-Base usar a sequencia di* [delete, insite, *a tag a ser escolhida.]
+
+=====================================================================================================
+
+DELEÇÃO DE BLOCOS
+
+Para remover um bloco completo, basta digitar "di*" dentro do bloco.
+É possível fazer com (,{,[, ', " e assim por diante
+
+Para deletar uma linha, basta precionar "d"
+Deletar uma palavra, com o cursor nela digite "dw"
+Deletar o resto da linha, "D" [Shift + d]
 
 Essas opções podem ser multiplicadas (Ex.: 3d = Deleta 3 linhas).
 Ao realizar as opções com d, c, y dentre outras, todo o conteúdo fica armazenado no buffer para colar com o p.
 
-===============================================================================================================
+
+=====================================================================================================
 
 DESFAZER E REFAZER
 
 Desfaz	= u
 Refaz	= Ctrl+R
 
-===============================================================================================================
+
+=====================================================================================================
 
 MODO DE INSERÇÃO
 
-i = Insere antes da seleção do cursor.
-a = Insere após a seleção do cursor.
-I = Insere no início da linha. (Shift+i)
-A = Insere no final da linha. (Shift+a)
-o = Insere na linha abaixo.
-O = Insere na linha acima. (Shift+o)
+i: Insere na posição do cursor
+a: Insere numa forma de append
+o: Insere na linha de baixo.
+s: Insere apagando o char selecionado pelo cursor
 
-===============================================================================================================
+Todas estas teclas podem ser combinadas com a tecla "Shift", que faz as seguintes adaptações
+
+i: Insere no início da linha
+a: Insere no final da linha
+o: Insere na linha acima a atual
+s: Insere apagando todo a linha
+
+
+=====================================================================================================
 
 MOVIMENTAÇÃO PELO ARQUIVO
 
@@ -61,18 +90,26 @@ e = Final da panavra. (end)
 {} = Movimenta pelo arquivo buscando espaços em branco, indo a frente e voltando pelo documento.
 () = Ele entra pela identação
 
-===============================================================================================================
-	
+
+=====================================================================================================
+
 MODO DE NAVEGAÇÃO
 
-0 = Move o cursor para o final da linha.
-$ = Move o cursor para o início da linha.
+0 = Move o cursor para o início da linha.
+$ = Move o cursor para o final da linha.
 
 gg = Move o cursor para o início do arquivo.
 G = Move o cursor para o fim do arquivo.
 
-===============================================================================================================
 
+=====================================================================================================
+
+REPETIÇÃO DE AÇÕES
+
+É possível repetir uma ação realizando ela n vezes, basta digitar a quantidade em número antes da ação
+
+
+=====================================================================================================
 COMANDOS
 
 Para entrar no modo de Comandos, é necessário apertar Esc.
@@ -85,4 +122,3 @@ Para entrar no modo de Comandos, é necessário apertar Esc.
 :! = Caractere para forçar sem avisar.
 
 ZZ Salva e sai.
-
